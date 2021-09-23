@@ -10,12 +10,10 @@ Middleman project with static Resume site.
 ### [Install](#install)
 
 ```bash
-npm install
-bundle install --path vendor/bundle
-bundle exec middleman
+docker build -t resume .
 ```
 
-To build a new version for [https://oharsta.github.io/resume/build](http://oharsta.github.io/resume/build):
+To build a new version for [https://harrykodden.github.io/resume/build](http://harrykodden.github.io/resume/build):
 
 ```bash
 git checkout gh-pages
@@ -25,3 +23,4 @@ git add .
 git commit -am 'new release'
 git push
 ```
+
