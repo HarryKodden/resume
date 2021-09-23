@@ -1,11 +1,10 @@
 ## [Resume template](#resume-template)
 
-Middleman project with static Resume site.
+Building static Resume site.
 
 ### [System Requirements](#system-requirements)
 
-- ruby
-- npm
+- docker
 
 ### [Install](#install)
 
@@ -13,7 +12,22 @@ Middleman project with static Resume site.
 docker build -t resume .
 ```
 
+### [Update your resume](#update)
+
+Make your adjustments in ***source/resume.yml***.
+build local static file:
+```
+./resume.sh
+```
+
+open in browser:
+```
+[browser] build/index.html
+```
+### [Publish updated resume](#publish)
+
 To build a new version for [https://harrykodden.github.io/resume/build](http://harrykodden.github.io/resume/build):
+
 
 ```bash
 git checkout gh-pages
@@ -23,4 +37,3 @@ git add .
 git commit -am 'new release'
 git push
 ```
-
