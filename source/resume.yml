@@ -1,0 +1,74 @@
+name: Harry Kodden
+title: Software Engineer
+email: harry@e-tunity.nl
+birthday: December 6, 1963
+mobile: +31 6 29 56 48 63
+links:
+  - url: https://github.com/harryKodden
+    img: github.png
+  - url: https://nl.linkedin.com/in/harrykodden
+    img: linkedin-in-logo.png
+address:
+  street: ...
+  city: Zwolle
+  country: Netherlands
+description: |
+  ...
+stack : ...
+passion:  My main passion is building and shipping great software.
+skills:
+  - name: (U-Li)nix
+    years: 20
+  - name: Python
+    years: 10
+  - name: Docker
+    years: 5
+hobbies:
+  - name: Running
+    icon: running.png
+  - name: Programming
+    icon: programming.png
+  - name: Bridge
+    icon: bridge.png
+experiences:
+  - company: e-tunity
+    title: Founder & Partner
+    from: March 2000
+    until: now
+    description: ...
+    technologies:
+      - Java
+      - Python
+      - Ansible
+      - Linux
+      - SQL and NoSQL databases
+  - company: e-tunity
+    title: Software Engineer
+    from: March 2000
+    until: Now
+    description: Managing partner & Founder.
+    technologies:
+      - Various
+educations:
+  - name: HIO
+    description: Computer Science
+    from: August 1981
+    to: June 1985
+  - name: HAVO
+    description:
+    from: August 1976
+    to: June 1981
+languages:
+  - name: Dutch
+    proficiency: Native
+    visualize: full-circle
+  - name: English
+    proficiency: Excellent
+    visualize: three-quarters-circle
+  - name: German
+    proficiency: Good
+    visualize: half-circle
+  - name: French
+    proficiency: Basic
+    visualize: one-quarters-circle
+

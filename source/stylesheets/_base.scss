@@ -1,0 +1,23 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.title {
+  text-transform: uppercase;
+  border-bottom: dotted 1px $light-grey;
+  margin: 30px 0px 10px 0px;
+  padding-bottom: 10px;
+  color: black;
+}

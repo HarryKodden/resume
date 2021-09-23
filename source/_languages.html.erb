@@ -1,0 +1,11 @@
+<section>
+  <h3 class="title">Languages</h3>
+  <div class="languages">
+    <% resume_yml.languages.each do |language| %>
+        <div class="language <%= language.visualize %>">
+          <span><%= language.name %></span>
+          <span><%= language.proficiency %></span>
+        </div>
+    <% end %>
+  </div>
+</section>

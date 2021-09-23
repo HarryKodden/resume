@@ -1,0 +1,15 @@
+<section class="skills">
+  <h3 class="title">Skills</h3>
+  <div class="legend">
+    <span>Skill</span>
+    <span>Years of experience</span>
+  </div>
+  <% resume_yml.skills.each do |skill| %>
+      <div class="skill">
+        <span><%= skill.name %></span>
+        <% skill.years.times { %>
+            <span class="year"></span>
+        <% } %>
+      </div>
+  <% end %>
+</section>

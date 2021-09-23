@@ -1,0 +1,11 @@
+<section>
+  <h3 class="title">Hobbies & Interests</h3>
+  <div class="hobbies">
+    <% resume_yml.hobbies.each do |hobby| %>
+        <div class="hobby">
+          <%= tag :img, :src => "/images/" + hobby.icon %>
+          <span><%= hobby.name %></span>
+        </div>
+    <% end %>
+  </div>
+</section>

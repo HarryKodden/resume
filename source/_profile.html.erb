@@ -1,0 +1,27 @@
+<section class="profile row">
+
+  <div class="me col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <p><%= resume_yml.name %></p>
+    <p><%= resume_yml.title %></p>
+    <%= tag :img, :src => "/images/harry.jpeg" %>
+  </div>
+
+  <div class="address col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <span>Address</span>
+    <span><%= resume_yml.address.street %></span>
+    <span><%= resume_yml.address.city %></span>
+    <span><%= resume_yml.address.country %></span>
+    <br>
+  </div>
+
+  <div class="contact col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    <span>Contact</span>
+    <span><%= resume_yml.email %></span>
+    <span><%= resume_yml.mobile %></span>
+    <% resume_yml.links.each do |link| %>
+        <span><a href="<%= link.url %>"><%= tag :img, :src => "/images/" + link.img %></a></span>
+    <% end %>
+
+  </div>
+
+</section>

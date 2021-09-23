@@ -1,0 +1,55 @@
+.language {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  margin-top: 30px;
+  margin-right: 10px;
+
+  span {
+    display: block;
+    color: black;
+
+    &:last-child {
+      color: $dark-grey;
+      font-size: 12px;
+    }
+  }
+
+  @mixin circle {
+    content: '';
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: solid 5px $light-grey;
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  &.one-quarters-circle:before {
+    @include circle;
+    border-top-color: $green;
+  }
+  &.half-circle:before {
+    @include circle;
+    border-top-color: $green;
+    border-right-color: $green;
+  }
+  &.three-quarters-circle:before {
+    @include circle;
+    border-right-color: $green;
+    border-top-color: $green;
+    border-bottom-color: $green;
+  }
+  &.full-circle:before {
+    @include circle;
+    border-color: $green;
+  }
+
+}

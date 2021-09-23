@@ -1,0 +1,15 @@
+<section class="experiences">
+
+  <h3 class="title">Experiences</h3>
+  <ul>
+
+    <% resume_yml.experiences.each do |experience| %>
+        <li>
+          <p class="from-until"><%= experience.from %><i class="fa fa-long-arrow-right" aria-hidden="true"></i><%= experience.until %></p>
+          <p class="company"><%= experience.company + ', ' + experience.title %></p>
+          <p class="description"><%= experience.description %></p>
+        </li>
+
+    <% end %>
+  </ul>
+</section>

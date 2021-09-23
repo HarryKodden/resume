@@ -1,0 +1,70 @@
+section.experiences, section.education {
+  ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 12px solid $medium-grey;
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      z-index: 999;
+    }
+
+    li {
+      border-left: solid 2px $medium-grey;
+      padding: 0px 0px 30px 40px;
+      position: relative;
+
+      &:last-child {
+        padding-bottom: 2px;
+      }
+
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border: solid 3px $medium-grey;
+        border-radius: 24px;
+        background-color: white;
+        position: absolute;
+        top: 28px;
+        left: -12px;
+      }
+
+      p.from-until {
+        margin: 0px;
+        padding: 5px 0px;
+        color: $darker-grey;
+        font-style: italic;
+      }
+
+      p.company {
+        margin: 0px;
+        padding: 0px;
+        font-weight: 400;
+      }
+
+      p.description {
+        padding: 5px 0px 0px 0px;
+        margin: 0px;
+        color: $dark-grey;
+      }
+
+      i {
+        margin: 0px 10px;
+        font-size: 12px;
+      }
+
+    }
+  }
+}
