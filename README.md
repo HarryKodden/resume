@@ -32,7 +32,6 @@ To build a new version for [https://harrykodden.github.io/resume/build](http://h
 ```bash
 git checkout gh-pages
 git merge master
-bundle exec middleman build
 git add .
 git commit -am 'new release'
 git push
